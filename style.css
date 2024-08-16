@@ -68,8 +68,14 @@ nav .nav-links{
     justify-content: center;
     align-items: center;
    background: var(--main-color);
-   padding: .1875rem .17rem .1875rem;
+   padding: .1875rem .17rem .1875rem 2rem;
+   gap: .75rem;
   border-radius: 30px;
+  transition: .3s ease;
+}
+
+.buy-btn:hover{
+    background: #007bffbf;
 }
 
 .buy-btn-text{
@@ -77,24 +83,6 @@ nav .nav-links{
     font-weight: 500;
     line-height: 1.6;
     color: #fff;
-    transition: .2s ease;
-}
-
-.buy-btn:hover .buy-btn-text{
-    color: #000;
-}
-
-.btn-arrow-wrapper{
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    gap: .75rem;
-    padding-left: 2rem;
-    transition: .2s ease;
-}
-
-.buy-btn:hover .btn-arrow-wrapper{
-    background: #fff;
 }
 
 .btn-arrow{
@@ -106,10 +94,20 @@ nav .nav-links{
     align-items: center;
     border-radius: 20px;
     background-color: #fff;
+    transition: .3s ease;
+}
+
+.buy-btn:hover .btn-arrow{
+    background: #1d1d1d;
 }
 
 .btn-arrow i{
     font-size: 25px;
+    transition: .3s ease;
+}
+
+.buy-btn:hover .btn-arrow i{
+    color: #fff;
 }
 
 #check{
@@ -164,7 +162,7 @@ nav .nav-links{
     width: 100%;
     height: 0;
     position: absolute;
-    top: 15.5%;
+    top: 13%;
     left: 0;
     padding: 0;
     overflow: hidden;
