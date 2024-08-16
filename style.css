@@ -1,0 +1,199 @@
+
+/* Global Styling */
+
+:root{
+    --main-color:#517df5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    flex-grow: 0;
+}
+
+body{
+    font-family: Inter;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar Design */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem 0;
+  padding: 0 20rem;
+}
+
+nav{
+    display: flex;
+    gap: 1rem;
+}
+
+nav .nav-links{
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: .9375rem 0;
+}
+
+.nav-links .nav-text{
+    font-size: 15px;
+    color: #1d1d1d;
+    transition: all 350ms ease;
+}
+
+.nav-links .nav-text:hover{
+    color: #007aff;
+}
+
+.buy-btn-wrapper{
+        flex-grow: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 0 0 1.25rem;
+}
+
+.buy-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   background: var(--main-color);
+   padding: .1875rem .17rem .1875rem;
+  border-radius: 30px;
+}
+
+.buy-btn-text{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #fff;
+    transition: .2s ease;
+}
+
+.buy-btn:hover .buy-btn-text{
+    color: #000;
+}
+
+.btn-arrow-wrapper{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: .75rem;
+    padding-left: 2rem;
+    transition: .2s ease;
+}
+
+.buy-btn:hover .btn-arrow-wrapper{
+    background: #fff;
+}
+
+.btn-arrow{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.btn-arrow i{
+    font-size: 25px;
+}
+
+#check{
+    display: none;
+}
+
+.nav-icon{
+    display: none;
+    font-size: 1.5rem;
+    border: 1px solid hsla(0, 0%, 53.3%, 0.15);
+    padding: 1.125rem;
+    transition-delay: .1s;
+}
+
+@media (max-width: 1480px){
+
+    header{
+        padding: .6rem 4%;
+    } 
+}
+
+@media (max-width: 980px){
+
+    header{
+        z-index: -1;
+    }
+
+    #check:checked~.nav-icon #menu-icon{
+        display: none;
+    }
+
+    #check:checked~.nav-icon #close-icon{
+        display: block;
+    }
+
+    #check:checked~.nav-icon{
+        background: var(--main-color);
+        color: #fff;
+    }
+
+   .nav-icon{
+    display: inline-flex;
+   }
+
+   #close-icon{
+    display: none;
+   }
+
+   nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 15.5%;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .2s ease;
+    transition-delay: .1s;
+}
+
+#check:checked~nav{
+    height: 20.5rem;
+    padding: 1rem 50% 1.25rem 1px;
+   }
+
+   .nav-links .nav-text{
+    display: block;
+    margin-left: 1.75rem;
+   }
+
+   .buy-btn{
+    width: 100%;
+    justify-content: space-between;
+   }
+
+   .buy-btn-text{
+    margin: 0 auto;
+   }
+}
+
+@media (max-width: 460px){
+    #check:checked~nav{
+        padding: 1rem 35% 1.25rem 1px;
+    }
+}
