@@ -16,6 +16,8 @@
 }
 
 section{
+    display: flex;
+    flex-direction: column;
     padding: 20px 17%;
 }
 
@@ -217,11 +219,6 @@ nav .nav-links {
 
 /* Hero Section */
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero-bg-img-wrapper {
     display: flex;
     flex-direction: column;
@@ -324,11 +321,6 @@ nav .nav-links {
 
 /* Features Section */
 
-.feature-section{
-    display: flex;
-    flex-direction: column;
-}
-
 .feature-wrapper{
     display: flex;
     justify-content: space-between;
@@ -353,7 +345,6 @@ nav .nav-links {
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: -2.88px;
-  text-align: left;
   color: #1d1d1f;
 }
 
@@ -361,7 +352,6 @@ nav .nav-links {
   align-self: stretch;
   font-size: 18px;
   line-height: 1.6;
-  text-align: left;
   color: #777;
     padding-bottom: .9px;
 }
@@ -378,7 +368,6 @@ nav .nav-links {
     width: 425px;
     font-size: 16px;
     line-height: 1.6;
-    text-align: left;
     color: #777;
 }
 
@@ -400,32 +389,6 @@ nav .nav-links {
     flex-direction: row-reverse;
 }
 
-.feature-bottom-background{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 45px 60px;
-    border-radius: 26px;
-    background: var(--main-color);
-}
-
-.feature-bottom-content-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-
-.feature-bottom-text-wrapper{
-    width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 @media (max-width: 1656px){
     .feature-wrapper{
         gap: 3%;
@@ -440,7 +403,6 @@ nav .nav-links {
 }
 
 @media (max-width: 530px){
-
     .feature-text-wrapper {
         max-width: 317px;
         padding: 0 0 30px;
@@ -464,5 +426,162 @@ nav .nav-links {
 @media (max-width: 321px){
     .feature-text-wrapper{
         max-width: 274px;
+    }
+}
+
+/* Profile Section */
+
+.profile-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 60px;
+    border-radius: 26px;
+    background: var(--main-color);
+}
+
+.profile-content-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+
+.profile-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-text-wrapper .profile-logo-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-text-wrapper .profile-logo{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0 40px;
+}
+
+.profile-description{
+    max-width: 488px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.profile-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 105px 27.2px;
+}
+
+.profile-image{
+    padding-bottom: 20px;
+}
+
+.profile-name-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 5px;
+}
+
+.profile-name{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.profile-post{
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+@media (max-width: 1820px){
+
+    .profile-frame{
+        padding-right: 74px;
+    }
+}
+
+@media (max-width: 1630px){
+    .profile-content-wrapper{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1480px){
+    .profile-content-wrapper{
+        gap: 210px;
+    }
+}
+
+@media (max-width: 1250px){
+    .profile-frame{
+        padding-right: 27px;
+    }
+}
+
+@media (max-width: 1160px){
+    .profile-background{
+        padding: 34px 20px 35px 20px;
+    }
+
+    .profile-content-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 45px;
+    }
+    
+    .profile-text-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-text-wrapper .profile-logo{
+        padding: 40px 0 0 0;
+    }
+
+    .profile-frame{
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px){
+    .profile-description{
+        max-width: 253px;
+        font-size: 16px;
+    }
+
+    .profile-text-wrapper .profile-logo{
+        width: 74%;
+        padding-top: 20px;
+    }
+
+    .profile-image{
+        width: 155px;
+    }
+
+    .profile-name{
+        font-size: 17px;
+    }
+
+    .profile-post{
+        font-size: 13px;
     }
 }
