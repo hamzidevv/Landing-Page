@@ -201,7 +201,7 @@ nav .nav-links {
 /* Hero Section */
 
 .hero-section {
-    padding: 0 20rem;
+    padding: 20px 20rem;
     display: flex;
     flex-direction: column;
 }
