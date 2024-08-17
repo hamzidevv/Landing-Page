@@ -15,6 +15,16 @@
     font-weight: normal;
 }
 
+section{
+    padding: 20px 17%;
+}
+
+@media (max-width: 1480px) {
+    section {
+        padding: 20px 4%;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -208,7 +218,6 @@ nav .nav-links {
 /* Hero Section */
 
 .hero-section {
-    padding: 20px 17%;
     display: flex;
     flex-direction: column;
 }
@@ -269,12 +278,6 @@ nav .nav-links {
     background: transparent;
 }
 
-@media (max-width: 1480px) {
-    .hero-section {
-        padding: 20px 4%;
-    }
-}
-
 @media (max-width: 680px){
     .hero-content-wrapper{
         width: 62%;
@@ -324,7 +327,6 @@ nav .nav-links {
 .feature-section{
     display: flex;
     flex-direction: column;
-    padding: 20px 17%;
 }
 
 .feature-wrapper{
@@ -398,15 +400,35 @@ nav .nav-links {
     flex-direction: row-reverse;
 }
 
+.feature-bottom-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 60px;
+    border-radius: 26px;
+    background: var(--main-color);
+}
+
+.feature-bottom-content-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.feature-bottom-text-wrapper{
+    width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 @media (max-width: 1656px){
     .feature-wrapper{
         gap: 3%;
-    }
-}
-
-@media (max-width: 1480px){
-    .feature-section{
-        padding: 20px 4%;
     }
 }
 
