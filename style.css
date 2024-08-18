@@ -98,14 +98,14 @@ nav .nav-links {
 
 .btn-text {
     position: relative;
-    padding: 10px;
+    padding: 10px 36px 10px 10px;
     vertical-align: middle;
 }
 
 .btn svg {
-    position: relative;
-    top: 2px;
-    margin-left: 10px;
+    position: absolute;
+    top: 17px;
+    right: 14px;
     font-size: 16px;
     fill: none;
     stroke-linecap: round;
@@ -187,7 +187,6 @@ nav .nav-links {
         padding: 0;
         overflow: hidden;
         transition: .2s ease;
-        transition-delay: .1s;
         background: #fff;
     }
 
@@ -196,13 +195,17 @@ nav .nav-links {
         padding: 16px 50% 20px 15px;
     }
 
+    
     .nav-links .nav-text {
-        display: block;
+        display: none;
         margin-left: 0;
+    }
+    
+    #check:checked~nav .nav-links .nav-text{
+        display: block;
     }
 
     .nav-btn {
-        width: 147px;
         margin: 0 0 0 8px;
     }
 
@@ -703,7 +706,7 @@ nav .nav-links {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 39px 0;
+  padding: 27px 0;
   border-radius: 100px;
   border: solid 1px var(--main-color);
   cursor: pointer;
@@ -798,4 +801,62 @@ nav .nav-links {
     .plan-title{
         font-size: 26px;
     }
+}
+
+/* Community Section */
+
+.community-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.community-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 34px 0 0 0;
+}
+
+.community-title-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.community-join-text{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.community-title{
+    width: 686px;
+  font-size: 76.8px;
+  line-height: 1.1;
+  letter-spacing: -2.88px;
+  color: #1d1d1f;
+}
+
+.community-image{
+    width: 100%;
+    background: no-repeat center center/cover;
+}
+
+.community-btn-wrapper{
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.community-btn{
+  width: 100%;
+  padding: 28px 36px;
+  border-radius: 60px;
+  background-color: var(--main-color);
 }
