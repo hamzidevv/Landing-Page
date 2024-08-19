@@ -1124,6 +1124,11 @@ nav .nav-links {
 .footer-social-icon-wrapper .footer-social-icon-bg i{
     font-size: 36px;
   color: #1d1d1f;
+  transition: all 350ms ease;
+}
+
+.footer-social-icon-wrapper .footer-social-icon-bg i:hover{
+    color: var(--main-color);
 }
 
 .footer-middle-wrapper{
@@ -1150,6 +1155,11 @@ nav .nav-links {
     line-height: 1.6;
     padding: 10px 0;
     color: #1d1d1f;
+    transition: all 350ms ease;
+}
+
+.footer-middle-text:hover{
+    color: #007aff;
 }
 
 .footer-bottom-wrapper{
