@@ -342,13 +342,12 @@ nav .nav-links {
 }
 
 .feature-text-wrapper{
-    max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   gap: 15.1px;
-  padding: 52.3px 0 60px;
+  padding: 0 0 60px;
 }
 
 .feature-title{
@@ -365,7 +364,7 @@ nav .nav-links {
   font-size: 18px;
   line-height: 1.6;
   color: #777;
-    padding-bottom: .9px;
+    padding-bottom: 16.9px;
 }
 
 .feature-feautures-wrapper{
@@ -377,7 +376,6 @@ nav .nav-links {
 }
 
 .feature-feautures-text{
-    width: 425px;
     font-size: 16px;
     line-height: 1.6;
     color: #777;
