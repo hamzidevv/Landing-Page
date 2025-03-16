@@ -2,7 +2,7 @@
 
 :root {
     --main-color: #517df5;
-    --main-color-hover: #007aff;
+    --main-color-light: #007aff;
 }
 
 * {
@@ -17,7 +17,7 @@
 }
 
 ::selection {
-    background-color: var(--main-color);
+    background-color: var(--main-color-light);
     color: #fff;
 }
 
@@ -1179,7 +1179,7 @@ nav .nav-links {
 }
 
 .footer-middle-text:hover{
-    color: var(--main-color-hover);
+    color: var(--main-color-light);
 }
 
 .footer-bottom-wrapper{
