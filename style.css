@@ -94,7 +94,7 @@ nav .nav-links {
 }
 
 .nav-text .nav-links:hover {
-    color: #007aff;
+    color: var(--main-color-light);
     cursor: pointer;
 }
 
@@ -383,7 +383,7 @@ nav .nav-links {
   align-self: stretch;
   font-size: 18px;
   line-height: 1.6;
-  color: #777;
+  color: #000;
     padding-bottom: 16.9px;
 }
 
@@ -398,7 +398,7 @@ nav .nav-links {
 .feature-feautures-text{
     font-size: 16px;
     line-height: 1.6;
-    color: #777;
+    color: #000;
 }
 
 .feature-img-wrapper{
@@ -724,7 +724,7 @@ nav .nav-links {
 .plan-features{
   font-size: 15px;
   line-height: 1.33;
-  color: #777;
+  color: #000;
 }
 
 .plan-btn{
@@ -1127,7 +1127,7 @@ nav .nav-links {
     width: 355px;
   font-size: 15px;
   line-height: 1.6;
-  color: #777;
+  color: #000;
 }
 
 .footer-social-icon-wrapper{
@@ -1162,7 +1162,7 @@ nav .nav-links {
   padding: 0 0.6px 0 0;
   font-size: 15px;
   line-height: 1.6;
-  color: #777;
+  color: #000;
 }
 
 .footer-middle-text-wrapper{
