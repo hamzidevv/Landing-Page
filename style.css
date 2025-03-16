@@ -2,6 +2,7 @@
 
 :root {
     --main-color: #517df5;
+    --main-color-hover: #007aff;
 }
 
 * {
@@ -13,6 +14,25 @@
     font-family: Inter, sans-serif;
     letter-spacing: normal;
     font-weight: normal;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
 }
 
 html{
@@ -1159,7 +1179,7 @@ nav .nav-links {
 }
 
 .footer-middle-text:hover{
-    color: #007aff;
+    color: var(--main-color-hover);
 }
 
 .footer-bottom-wrapper{
